@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: url('shiny-car.jpg') no-repeat center center/cover;
+    height: 60vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.5em;
+}
+
+nav {
+    background: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 1em;
+    text-decoration: none;
+}
+
+section {
+    padding: 2em;
+    margin: 1em 0;
+}
+
+.services, .pricing, .testimonials, .contact {
+    background: white;
+    padding: 2em;
+    margin: 1em 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.services h2, .pricing h2, .testimonials h2, .contact h2 {
+    color: #444;
+}
+
+.pricing ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.pricing li {
+    background: #eee;
+    margin: 1em 0;
+    padding: 1em;
+    border-left: 5px solid #333;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
