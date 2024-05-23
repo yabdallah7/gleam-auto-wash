@@ -1,10 +1,15 @@
+/* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
+}
+
+h1, h2, h3 {
+    margin: 0.5em 0;
 }
 
 header {
@@ -25,19 +30,16 @@ header {
 
 header h1 {
     font-size: 3em;
-    margin: 0.2em 0;
 }
 
 header p {
     font-size: 1.2em;
-    margin: 0.2em 0;
 }
 
 nav {
     background: #333;
     color: white;
     padding: 10px 0;
-    text-align: center;
 }
 
 nav ul {
@@ -75,40 +77,70 @@ main {
 }
 
 .section h2 {
-    margin-top: 0;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
-.section ul {
-    list-style: none;
-    padding: 0;
+.service-list {
+    display: flex;
+    justify-content: space-between;
 }
 
-.section ul li {
-    background: #eee;
-    margin: 10px 0;
+.service-item {
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
     padding: 10px;
-    border-left: 5px solid #333;
+    text-align: left;
 }
 
-blockquote {
+th {
+    background-color: #f4f4f4;
+}
+
+.testimonial-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial-item {
     background: #f9f9f9;
-    border-left: 10px solid #ccc;
-    margin: 1.5em 10px;
-    padding: 0.5em 10px;
-    quotes: "\201C""\201D""\2018""\2019";
+    border-left: 10px solid #333;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    position: relative;
 }
 
-blockquote:before {
-    color: #ccc;
+.testimonial-item::before {
     content: open-quote;
-    font-size: 4em;
-    line-height: 0.1em;
-    margin-right: 0.25em;
-    vertical-align: -0.4em;
+    font-size: 3em;
+    color: #ccc;
+    position: absolute;
+    top: -10px;
+    left: 10px;
 }
 
-blockquote p {
-    display: inline;
+.testimonial-item p {
+    margin: 0;
 }
 
 footer {
