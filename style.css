@@ -12,9 +12,14 @@ h1, h2, h3 {
     margin: 0.5em 0;
 }
 
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
 header {
     background: url('shiny-car.jpg') no-repeat center center/cover;
-    height: 60vh;
+    height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,6 +39,21 @@ header h1 {
 
 header p {
     font-size: 1.2em;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background: #ff5722;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #e64a19;
 }
 
 nav {
@@ -82,14 +102,14 @@ main {
     margin-bottom: 20px;
 }
 
-.service-list {
+.services-grid {
     display: flex;
+    gap: 20px;
     justify-content: space-between;
 }
 
 .service-item {
     flex: 1;
-    margin: 0 10px;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -100,7 +120,13 @@ main {
     transform: scale(1.05);
 }
 
-.table {
+.service-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
@@ -114,11 +140,6 @@ table, th, td {
 
 th {
     background-color: #f4f4f4;
-}
-
-.testimonial-list {
-    display: flex;
-    flex-direction: column;
 }
 
 .testimonial-item {
